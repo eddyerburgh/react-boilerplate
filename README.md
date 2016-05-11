@@ -2,6 +2,8 @@
 
 A basic React Project setup using webpack.
 
+It compiles scss into css and ES6 into ES5.
+
 Credit to [Will Stern](https://github.com/learncodeacademy/react-js-tutorials)
 
 ## Installation
@@ -20,17 +22,9 @@ To run the webpack dev server, enter
 npm run dev
 ```
 
-This will get your app running on http://localhost:8080/webpack-dev-server/index.html
+This will get your app running on http://localhost:8080/webpack-dev-server/index.html.
 
-In another Node window run
-
-```
-webpack --watch
-```
-
-For webpack to start watching your files for changes.
-
-When a file is changed localhost will update. No need to refresh.
+Webpack will watch for changes and update the browser when a file is changed.
 
 Use src/js/client.js to import your modules into. This compiles to src/client.min.js on save.
 
