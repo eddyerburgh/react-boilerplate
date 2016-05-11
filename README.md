@@ -5,7 +5,8 @@ A basic React Project setup using webpack.
 Credit to [Will Stern](https://github.com/learncodeacademy/react-js-tutorials)
 
 ## Installation
-https://github.com/learncodeacademy/react-js-tutorials
+
+Download the repository to your computer and follow the usage guide below.
 
 ## Usage
 
