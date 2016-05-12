@@ -22,7 +22,7 @@ To run the webpack dev server, enter
 npm run dev
 ```
 
-This will get your app running on http://localhost:8080/webpack-dev-server/index.html.
+This will get your app running on http://localhost:8080/webpack-dev-server.
 
 Webpack will watch for changes and update the browser when a file is changed.
 
