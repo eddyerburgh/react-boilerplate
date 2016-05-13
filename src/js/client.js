@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 
 require("../css/style.scss");
 
+import Layout from "./components/Layout";
+
 class Hello extends React.Component {
 	render() {
 		return (

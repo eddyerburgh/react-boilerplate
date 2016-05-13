@@ -22,11 +22,11 @@ To run the webpack dev server, enter
 npm run dev
 ```
 
-This will get your app running on http://localhost:8080/webpack-dev-server.
+This will get your app running on http://localhost:8080/webpack-dev-server/index.html.
 
 Webpack will watch for changes and update the browser when a file is changed.
 
-Use src/js/client.js to import your modules into. This compiles to src/client.min.js on save.
+Use src/js/client.js to import your modules into. This compiles to src/client.min.js, and is loaded into index.html.
 
 
 ## Support
