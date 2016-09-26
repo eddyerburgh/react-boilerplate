@@ -29,7 +29,7 @@ module.exports = {
     ]
   },
   output: {
-    filename: "client.min.js"
+    filename: "./src/client.min.js"
   },
   plugins: debug ? [ new ExtractTextPlugin('./src/style.css')] : [
     new ExtractTextPlugin('./src/style.css'),
