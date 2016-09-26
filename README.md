@@ -8,7 +8,24 @@ Credit to [Will Stern](https://github.com/learncodeacademy/react-js-tutorials)
 
 ## Installation
 
-Download the repository to your computer and follow the usage guide below.
+Download the repository to your computer.
+
+In your console, enter:
+
+```
+npm install
+```
+To start the server:
+
+```
+npm run dev
+```
+
+To compile SCSS enter:
+
+```
+npm run compile scss
+```
 
 ## Usage
 

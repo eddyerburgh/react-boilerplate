@@ -19,23 +19,20 @@ module.exports = {
         }
       },
       {
-        test: /\.scss$/, 
+        test: /\.scss$/,
+        exclude: /node_modules/,
         loader: ExtractTextPlugin.extract(
-            'style', // backup loader when not building .css file
-            'css!sass' // loaders to preprocess CSS
+            'style',
+            'css!sass'
         )
       }
     ]
   },
-  sassLoader: {
-    includePaths: [path.resolve(__dirname, "../css")]
-  },
   output: {
-    path: __dirname + "/src/",
     filename: "client.min.js"
   },
-  plugins: debug ? [ new ExtractTextPlugin('style.css')] : [
-    new ExtractTextPlugin('style.css'),
+  plugins: debug ? [ new ExtractTextPlugin('./src/style.css')] : [
+    new ExtractTextPlugin('./src/style.css'),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false }),
