@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Layout from './components/Layout';
+import Layout from './js/components/Layout';
 
-require('../scss/style.scss');
+require('style/style.style');
 
 const app = document.getElementById('app');
 
