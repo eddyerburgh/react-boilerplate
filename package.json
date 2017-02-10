@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "lint:fix": "eslint build src --fix",
+    "build": "NODE_ENV=production webpack --config build/webpack.production.config",
     "dev": "webpack-dev-server --config build/webpack.dev.config",
     "test": "npm run lint:fix"
   },
