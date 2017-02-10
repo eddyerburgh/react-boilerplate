@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Layout from './js/components/Layout';
+import Layout from './components/Layout';
 
 require('style/style.style');
 
