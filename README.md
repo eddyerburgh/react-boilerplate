@@ -43,7 +43,7 @@ This will get your app running on http://localhost:8080/webpack-dev-server/index
 
 Webpack will watch for changes and update the browser when a file is changed.
 
-Use src/js/client.js to import your modules into. This compiles to src/client.min.js, and is loaded into index.html.
+Use src/js/client.jsx to import your modules into. This compiles to src/client.min.js, and is loaded into index.html.
 
 
 ## Support
