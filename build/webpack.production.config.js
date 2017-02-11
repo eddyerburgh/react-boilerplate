@@ -1,6 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
@@ -43,6 +44,12 @@ module.exports = {
   },
 
   plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false,
+        drop_console: false,
+      }
+    }),
     new ExtractTextPlugin('[contenthash].css'),
     new HtmlWebpackPlugin({
       template: `${src}/index.tpl.html`,
