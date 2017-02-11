@@ -11,7 +11,7 @@ module.exports = {
   entry: `${src}/client.jsx`,
 
   output: {
-    filename: 'bundle.js',
+    filename: '[name]-[hash].js',
     path: dist
   },
 
@@ -35,15 +35,15 @@ module.exports = {
       {
         test: /\.scss$/,
         loaders: ExtractTextPlugin.extract({
-          fallbackLoader: 'style-loader',
-          loader: 'css-loader!sass-loader',
+          fallback: 'style-loader',
+          use: 'css-loader!sass-loader',
         }),
       },
     ],
   },
 
   plugins: [
-    new ExtractTextPlugin('styles.css'),
+    new ExtractTextPlugin('[contenthash].css'),
     new HtmlWebpackPlugin({
       template: `${src}/index.tpl.html`,
     }),
