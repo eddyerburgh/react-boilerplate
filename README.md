@@ -1,10 +1,10 @@
-# React Boilerplate
+# react-boilerplate
 
-A basic React Project setup using webpack.
+A super simple React Project setup using webpack 2.
 
 It compiles scss into css and ES6 into ES5.
 
-Credit to [Will Stern](https://github.com/learncodeacademy/react-js-tutorials)
+**NOTE: This was originally made to add SCSS support to [Will Stern's tutorial](https://github.com/learncodeacademy/react-js-tutorials). V2 departs from this structure. Use the [v1 branch](https://github.com/eddyerburgh/react-boilerplate/tree/v1) for the original version.**
 
 ## Installation
 
@@ -15,36 +15,38 @@ In your console, enter:
 ```
 npm install
 ```
+
+## Usage
+
 To start the server:
 
 ```
 npm run dev
 ```
 
-To compile SCSS enter:
+This will start a server on [http://localhost:8080](http://localhost:8080). It will reload when you change your modules.
+
+To build for production:
 
 ```
-npm run compile scss
+npm run build
 ```
 
-## Usage
+The build script will produce an index.html, css file and JavaScript file in the dist file. Ready to deploy.
 
-Get a react environment set up quickly with this boilerplate.
-
-It includes all the modules you need. All you need to do is download the project, unzip it, run node and start building.
-
-To run the webpack dev server, enter
+To lint your JavaScript:
 
 ```
-npm run dev
+npm test
 ```
 
-This will get your app running on http://localhost:8080/webpack-dev-server/index.html.
+## Features
 
-Webpack will watch for changes and update the browser when a file is changed.
-
-Use src/js/client.jsx to import your modules into. This compiles to src/client.min.js, and is loaded into index.html.
-
+* [React 15.4](https://github.com/facebook/react/releases/tag/v15.4.0)
+* [Webpack 2](https://webpack.js.org/)
+* [Cache Busting](https://www.keycdn.com/support/what-is-cache-busting/)
+* ES2015 and stage-0 support with [Babel](https://babeljs.io/)
+* Strict linting with the [AirBnB config](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
 
 ## Support
 
