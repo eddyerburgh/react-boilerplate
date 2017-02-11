@@ -4,7 +4,7 @@ A super simple React Project setup using webpack 2.
 
 It compiles scss into css and ES6 into ES5.
 
-**NOTE: This was originally made to add SCSS support to [Will Stern's tutorial](https://github.com/learncodeacademy/react-js-tutorials). V2 departs from this structure. Use the [v1 branch](https://github.com/eddyerburgh/react-boilerplate/tree/v1) for the original version.**
+**NOTE: v1 is available on the [v1 branch](https://github.com/eddyerburgh/react-boilerplate/tree/v1)**
 
 ## Installation
 
