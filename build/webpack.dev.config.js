@@ -11,12 +11,14 @@ module.exports = {
 
   output: {
     filename: 'bundle.js',
-    path: dist
+    path: dist,
   },
 
   resolve: {
     extensions: ['.js', '.jsx'],
   },
+
+  devtool: 'eval-source-map',
 
   module: {
     rules: [
@@ -33,7 +35,19 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loaders: ['style-loader', 'css-loader', 'sass-loader'],
+        use: [{
+          loader: 'style-loader',
+        }, {
+          loader: 'css-loader',
+          options: {
+            sourceMap: true,
+          },
+        }, {
+          loader: 'sass-loader',
+          options: {
+            sourceMap: true,
+          },
+        }],
       },
     ],
   },

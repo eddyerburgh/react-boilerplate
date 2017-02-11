@@ -13,7 +13,7 @@ module.exports = {
 
   output: {
     filename: '[name]-[hash].js',
-    path: dist
+    path: dist,
   },
 
   resolve: {
@@ -48,7 +48,7 @@ module.exports = {
       compress: {
         warnings: false,
         drop_console: false,
-      }
+      },
     }),
     new ExtractTextPlugin('[contenthash].css'),
     new HtmlWebpackPlugin({
