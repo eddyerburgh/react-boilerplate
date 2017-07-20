@@ -52,12 +52,6 @@ module.exports = {
         ]
       }
     }),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false,
-        drop_console: false,
-      },
-    }),
     new ExtractTextPlugin('[contenthash].css'),
     new HtmlWebpackPlugin({
       template: `${src}/index.tpl.html`,
